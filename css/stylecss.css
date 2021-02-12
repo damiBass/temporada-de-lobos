@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: black;
+  color: white;
+  max-width: 100%; }
+
+.menu {
+  position: absolute;
+  text-align: center;
+  word-spacing: 2rem;
+  margin-left: 15%;
+  margin-top: 5rem; }
+  .menu a {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none; }
+
+.cover {
+  background-image: url("https://media.giphy.com/media/EQe1fDhwl200Fy8kuy/giphy.gif");
+  background-size: cover; }
