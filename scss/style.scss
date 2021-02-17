@@ -1,3 +1,30 @@
+// Mixin //
+
+@mixin contact_social {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    font-family: "Raleway", verdana;
+    text-transform: uppercase;
+    
+}
+
+@mixin navigator {
+    text-align: center;
+    word-spacing: 3rem;
+    a { 
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-family: "Raleway", cursive;
+    font-weight: lighter;
+    &:hover {
+        color: rgb(5, 64, 80);
+        transition: 0.5s;
+        }
+    }
+}
 
 // Generales //
 
@@ -17,29 +44,22 @@ footer {
     text-align: center;
     margin-top: 1rem;
     margin-bottom: 2rem;
-    background-color: darkslategrey;
+    background-color: rgb(5, 64, 80);
 }
 
+ 
 // Portada y Navegacion //
 
 .menu {
+    @include navigator;
     position: absolute;
-    text-align: center;
-    word-spacing: 3rem;
-    margin-left: 10%;
     margin-top: 5rem;
-    a { 
-    color: white;
-    font-size: 1.5rem;
-    text-decoration: none;
-    font-family: "Raleway", cursive;
-    font-weight: lighter;
-    &:hover {
-        color: red;
-        transition: 0.5s;
-    }  
-   }
-}
+    margin-left: 10%;
+}    
+
+.second_menu {
+    @include navigator;
+}  
 
 .cover {
     background-image: url("https://media.giphy.com/media/qVRSccRBTzbQrc0d8r/giphy.gif");
@@ -53,7 +73,6 @@ footer {
     }
 
 }
-
 
 // Biografia //
 
@@ -79,7 +98,6 @@ footer {
     }
 }
 
-
 // Multimedia //
 
 article {
@@ -103,3 +121,27 @@ article {
     }
     }
 } 
+
+// Contacto //
+
+.contact {
+   @include contact_social;
+   background-color: rgb(5, 64, 80);
+
+}
+
+.social {
+    @include contact_social;
+    background-color: #891000;
+    h2 {
+        margin-bottom: 2rem;
+    }
+    a {
+        padding-right: 0.5rem;
+    }
+    iframe {
+        display: block;
+        margin-top: 2rem;
+        margin-left: 6rem;
+    }
+}
