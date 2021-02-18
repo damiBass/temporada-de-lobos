@@ -122,26 +122,85 @@ article {
     }
 } 
 
+
+
+// Shows //
+
+.banner {
+    width: 100%;
+    img {
+        display: block;
+        margin: auto;
+    + h1 {
+        text-align: center;
+        font-family: "Raleway", verdana;
+        text-transform: uppercase;
+        font-size: 4rem;
+        padding: 1rem;
+    }
+    }
+}
+
+.container iframe {
+    margin: auto;
+    display: block;
+}
+
+.date img {
+    padding: 1rem;
+    margin-top: 1.25rem;
+}
+
+#card {
+    background-color: #360801;
+    box-shadow: 1px 1px 3px #6D0E00;
+}
+
+
 // Contacto //
 
 .contact {
-   @include contact_social;
-   background-color: rgb(5, 64, 80);
-
-}
-
-.social {
     @include contact_social;
-    background-color: #891000;
-    h2 {
-        margin-bottom: 2rem;
+    background-color: rgb(5, 64, 80);
+    form {
+        display: grid;
+        grid-template-columns: 200 200px;
+        grid-template-rows: repeat(5, 1fr);
+        align-items: start;
+    textarea {
+        background: transparent;
+        outline: none;
+        border: 2px solid;
+        border-bottom-color: #891000;  
+    }    
+    input {
+        width: 420px;
+        background: transparent;
+        outline: none;
+        border: 2px solid;
+        border-bottom-color: #891000;
+    &::placeholder {
+        color: black;
+        font-family: "Space Mono", verdana;
+   
     }
-    a {
-        padding-right: 0.5rem;
+    }    
     }
-    iframe {
-        display: block;
-        margin-top: 2rem;
-        margin-left: 6rem;
     }
-}
+
+ 
+ .social {
+     @include contact_social;
+     background-color: #891000;
+     h2 {
+         margin-bottom: 2rem;
+     }
+     a {
+         padding-right: 0.5rem;
+     }
+     iframe {
+         display: block;
+         margin-top: 2rem;
+         margin-left: 6rem;
+     }
+ }

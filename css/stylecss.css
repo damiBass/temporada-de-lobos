@@ -89,6 +89,30 @@ article {
       transform: scale(2);
       transition: 1s; }
 
+.banner {
+  width: 100%; }
+  .banner img {
+    display: block;
+    margin: auto; }
+    .banner img + h1 {
+      text-align: center;
+      font-family: "Raleway", verdana;
+      text-transform: uppercase;
+      font-size: 4rem;
+      padding: 1rem; }
+
+.container iframe {
+  margin: auto;
+  display: block; }
+
+.date img {
+  padding: 1rem;
+  margin-top: 1.25rem; }
+
+#card {
+  background-color: #360801;
+  box-shadow: 1px 1px 3px #6D0E00; }
+
 .contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -97,6 +121,25 @@ article {
   font-family: "Raleway", verdana;
   text-transform: uppercase;
   background-color: #054050; }
+  .contact form {
+    display: grid;
+    grid-template-columns: 200 200px;
+    grid-template-rows: repeat(5, 1fr);
+    align-items: start; }
+    .contact form textarea {
+      background: transparent;
+      outline: none;
+      border: 2px solid;
+      border-bottom-color: #891000; }
+    .contact form input {
+      width: 420px;
+      background: transparent;
+      outline: none;
+      border: 2px solid;
+      border-bottom-color: #891000; }
+      .contact form input::placeholder {
+        color: black;
+        font-family: "Space Mono", verdana; }
 
 .social {
   display: grid;

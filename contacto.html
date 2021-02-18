@@ -24,24 +24,21 @@
         <form action="">
             <h1>Contacto</h1>
             <div>
-                <label for="name"></label>
                 <input type="text" name="name" placeholder="Nombre">
             </div>
             <div>
-                <label for="email"></label>
+                <input type="tel" name="phone" title="Colocar numero telefonico con 15 y codigo de area previo" placeholder="Telefono">
+            </div>
+            <div>
                 <input type="email" name="email" placeholder="Email">
             </div>
             <div>
-                <label for="phone"></label>
-                <input type="tel" name="phone" title="Colocar numero telefonico con 15 y con codigo de area previo" placeholder="Telefono">
-            </div>
-            <div>
-                <label for="asunto"></label>
                 <input type="text" name="asunto" placeholder="Asunto">
             </div>
             <div>
-                <textarea name="textarea" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                <textarea name="textarea" id="" cols="50" rows="4" placeholder="Mensaje"></textarea>
             </div>
+            <input type="submit" name="enviar" value="Enviar"/>
         </form>
         <div>
             <img src="img/tempo11.jpg" alt="" width="950">
