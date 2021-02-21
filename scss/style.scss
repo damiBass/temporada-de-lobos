@@ -1,16 +1,14 @@
 // Mixin //
 
 @mixin navigator {
-    text-align: center;
     word-spacing: 3rem;
     a { 
     color: white;
     font-size: 1.5rem;
     text-decoration: none;
     font-family: "Maven Pro", cursive;
-    font-weight: lighter;
     &:hover {
-        color: rgb(5, 64, 80);
+        color: #6D0E00;
         transition: 0.5s;
         }
     }
@@ -35,9 +33,9 @@ footer {
     margin-top: 1rem;
     margin-bottom: 2rem;
     background-color: rgb(5, 64, 80);
+    width: 100%;
 }
 
- 
 // Portada y Navegacion //
 
 .menu {
@@ -48,8 +46,7 @@ footer {
 }    
 
 .second_menu {
-    @include navigator;
-    margin-top: 0.5rem;
+  @include navigator;
 }  
 
 .cover {
@@ -79,11 +76,14 @@ footer {
         text-transform: uppercase;
         font-family: "Maven Pro" , sans-serif;
         font-size: 4rem;
-        margin: 1rem;       
+        margin: 0.5rem;       
     }
     .us {
         margin-left: 8rem;
         margin-right: 8rem;
+        img {
+            width: 650px;
+        }
     }
     p {
         font-size: 1rem;
@@ -109,8 +109,6 @@ h2 {
      font-family: "Maven Pro", sans-serif;
     }
 
-   
-
 #gallery {
     border: 5px solid rgb(5, 64, 80);
 }
@@ -132,8 +130,6 @@ h2 {
     }
 }
 
-
-
 // Shows //
 
 .banner {
@@ -151,22 +147,18 @@ h2 {
     }
 }
 
-.container iframe {
-    margin: auto;
-    display: block;
-}
-
-.date img {
-    padding: 1rem;
-    margin-top: 1.25rem;
-}
-
 #card {
     background-color: #360801;
     box-shadow: 1px 1px 3px #6D0E00;
+    img {
+        padding: 1rem;
+        margin-top: 1.25rem;
+    }
+    iframe {
+        margin: auto;
+        display: block;
+    }
 }
-
-
 // Contacto //
 
 .contact {
@@ -177,7 +169,7 @@ h2 {
     grid-gap: 2rem;
     button {
         background-color: rgb(5, 64, 80);
-        width: 300px;
+        width: 320px;
         height: 50px;
         color: white;
         margin-top: 1rem;
@@ -200,21 +192,67 @@ h2 {
    .social {
        a {
            padding: 1rem;
-           margin: 2rem;
-           display: inline-block;
-           border: 3px double black;
-           background-color: #6D0E00 ;
-        
-       }
-  
-        
+           margin: 1rem;
+       }       
     }
    
-
- 
-    
     h1 {
         text-align: center;
         margin: 3rem;
         text-transform: uppercase;
     }
+
+@media (max-width: 375px) {
+    .video {display: flex;
+            flex-wrap: wrap;}
+       
+}
+
+@media (max-width: 1100px) {
+    .video {display: flex;
+            flex-wrap: wrap;}
+
+}
+
+@media (max-width: 990px) {
+        h1 {
+            font-size: 2rem;
+        }
+        .social a {
+            padding: 0;
+            margin: 0;
+            img {
+                width: 70px;   
+            }
+        }
+        .contact {
+            input, textarea {
+                width: 320px;
+            }
+        }
+        #card {
+            display: flex;
+            flex-wrap: wrap;
+            iframe {
+                width: 300px;
+                padding: 1rem;
+                margin-right: 1rem;
+            }
+        img {
+            margin: auto;
+            padding: 0;
+            width: 330px;
+        }        
+
+        }
+        .banner img {
+            width: 100vw;
+        }
+        .cover img {
+            width: 100%;
+        }
+        .us {
+            display: flex;
+        }
+    
+}
