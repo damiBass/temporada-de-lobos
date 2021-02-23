@@ -260,6 +260,7 @@ h2 {
         .menu {display: none;}
         #bio {display: flex;
             flex-wrap: wrap;
+            img {width: 100vw;}
         .us {
             margin: 0;
             img {width: 100vw;}
@@ -269,14 +270,11 @@ h2 {
                 width: 100vw;
                 font-size: 0.8rem;
             }
-        }       
-        .photoResposive img {
-            width: 100%;
-        }
-
+        }              
     }
 }
 
 @media (min-width: 900px) {
     .toogle_menu nav {display: none;}
+    .noPhoto {display: none;}
 }

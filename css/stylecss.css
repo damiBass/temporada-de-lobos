@@ -207,6 +207,8 @@ h1 {
   #bio {
     display: flex;
     flex-wrap: wrap; }
+    #bio img {
+      width: 100vw; }
     #bio .us {
       margin: 0; }
       #bio .us img {
@@ -216,10 +218,10 @@ h1 {
       #bio .us p {
         margin: 0.5rem;
         width: 100vw;
-        font-size: 0.8rem; }
-    #bio .photoResposive img {
-      width: 100%; } }
+        font-size: 0.8rem; } }
 
 @media (min-width: 900px) {
   .toogle_menu nav {
+    display: none; }
+  .noPhoto {
     display: none; } }
