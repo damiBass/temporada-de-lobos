@@ -197,6 +197,10 @@ section {
   margin-top: 2rem;
   line-height: 2;
 }
+.contact input::-moz-placeholder, .contact textarea::-moz-placeholder {
+  color: white;
+  font-family: "Space Mono", verdana;
+}
 .contact input::placeholder, .contact textarea::placeholder {
   color: white;
   font-family: "Space Mono", verdana;
@@ -290,6 +294,4 @@ section {
   .noPhoto {
     display: none;
   }
-}
-
-/*# sourceMappingURL=stylecss.css.map */
+}/*# sourceMappingURL=style.css.map */
